@@ -1,4 +1,4 @@
-# Webpack 5 Module Federation GPB Test with React/Typescript
+# Webpack 5 Module Federation GPB Test with React/Typescript [in dev]
 
 This project consist of four pieces, a host app `gpb_container` and three remotes `gpb_test1` `gpb_test2` `gpb_test3`.
 

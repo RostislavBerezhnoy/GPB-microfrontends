@@ -1,13 +1,8 @@
 {
 	"private": true,
-	"workspaces": {
-		"packages": [
-			"gpb_test1",
-			"gpb_test2",
-      "gpb_test3",
-			"gpb_container"
-		]
-	},
+	"workspaces": [
+    "packages/*"
+  ],
 	"scripts": {
 		"start": "lerna run --parallel start",
 		"build": "lerna run build",
