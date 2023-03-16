@@ -1,12 +1,13 @@
 # Webpack 5 Module Federation GPB Test with React/Typescript [in dev]
 
-This project consist of four pieces, a host app `gpb_container` and three remotes `gpb_test1` `gpb_test2` `gpb_test3`.
+This project consist of four pieces, a host app `gpb_container`, `gpb_ui` and three remotes `gpb_test1` `gpb_test2` `gpb_test3`.
 
 Workflow:
 
 - `gpb_test1` expose Test1 page.
 - `gpb_test2` expose Test2 page.
 - `gpb_test3` expose Test3 page.
+- `gpb_ui` ui-kit for projects.
 - `gpb_container` import Test1, Test2 and Test3 pages.
 
 ## Running Demo
