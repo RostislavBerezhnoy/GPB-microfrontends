@@ -62,6 +62,7 @@ module.exports = (_, argv) => {
         remotes: {
           gpb_test1: isProduction ? process.env.GPB_PROD_TEST1 : process.env.GPB_DEV_TEST1,
           gpb_test2: isProduction ? process.env.GPB_PROD_TEST2 : process.env.GPB_DEV_TEST2,
+          gpb_test3: isProduction ? process.env.GPB_PROD_TEST3 : process.env.GPB_DEV_TEST3,
         },
         shared: {
           ...deps,

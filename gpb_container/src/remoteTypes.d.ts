@@ -11,3 +11,9 @@ declare module "gpb_test2/Test2" {
 
   export default Test2;
 }
+
+declare module "gpb_test3/Test3" {
+  const Test3: React.ComponentType;
+
+  export default Test3;
+}
