@@ -21,7 +21,7 @@ yarn global add lerna
 Then,
 
 ```bash
-yarn run lerna bootstrap
+yarn run bootstrap
 ```
 
 Run the command above at the root of your project. This command will make sure you have dependencies you need in order to run this project.

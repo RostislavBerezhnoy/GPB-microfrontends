@@ -1,17 +1,17 @@
 {
-	"private": true,
-	"workspaces": [
+  "private": true,
+  "workspaces": [
     "packages/*"
   ],
-	"scripts": {
-		"start": "lerna run --parallel start",
-		"build": "lerna run build",
+  "scripts": {
+    "start": "lerna run --parallel start",
+    "build": "lerna run build",
     "bootstrap": "lerna bootstrap --force-local",
-		"serve": "lerna run --parallel serve",
-		"clean": "lerna run --parallel clean",
-		"prepare": "lerna run yarn"
-	},
-	"devDependencies": {
-		"lerna": "6.5.1"
-	}
+    "serve": "lerna run --parallel serve",
+    "clean": "lerna run --parallel clean",
+    "prepare": "lerna run yarn"
+  },
+  "devDependencies": {
+    "lerna": "6.5.1"
+  }
 }
