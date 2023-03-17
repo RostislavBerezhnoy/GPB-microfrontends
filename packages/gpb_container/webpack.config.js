@@ -28,26 +28,6 @@ module.exports = (_, argv) => {
           test: /\.(js|jsx|tsx|ts)$/,
           loader: "babel-loader",
           exclude: /node_modules/,
-          options: {
-            cacheDirectory: true,
-            babelrc: false,
-            presets: [
-              [
-                "@babel/preset-env",
-                { targets: { browsers: "last 2 versions" } },
-              ],
-              "@babel/preset-typescript",
-              ["@babel/preset-react", { "runtime": "automatic" }],
-            ],
-            plugins: [
-              ["@babel/plugin-proposal-class-properties", { loose: true }],
-              [
-                "@babel/plugin-proposal-private-property-in-object",
-                { loose: true },
-              ],
-              ["@babel/plugin-proposal-private-methods", { loose: true }],
-            ],
-          },
         },
       ],
     },
