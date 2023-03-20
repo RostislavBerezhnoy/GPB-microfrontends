@@ -211,6 +211,14 @@ module.exports = {
   },
   overrides: [
     {
+      files: [
+        "**/*.stories.*"
+      ],
+      rules: {
+        "import/no-anonymous-default-export": "off"
+      }
+    },
+    {
       files: ['*.tsx'],
       rules: {
         '@typescript-eslint/no-var-requires': 'off',

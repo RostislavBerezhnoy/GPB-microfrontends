@@ -8,15 +8,12 @@ export default {
   component: Card,
 }
 
-export const CardDefault: FC = () => {
-  return (
-    <Box flexDirection='row'>
-      {cardMocks.map((card, i) => (
-        <Box key={i} margin={10}>
-          <Card {...card} />
-        </Box>
-
-      ))}
-    </Box>
-  )
-}
+export const CardDefault: FC = () => (
+  <Box flexDirection='row'>
+    {cardMocks.map((card, i) => (
+      <Box key={i} margin={10}>
+        <Card {...card} />
+      </Box>
+    ))}
+  </Box>
+)

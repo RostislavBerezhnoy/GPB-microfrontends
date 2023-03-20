@@ -31,7 +31,6 @@ module.exports = (_, argv) => {
         },
       ],
     },
-
     plugins: [
       new webpack.EnvironmentPlugin({ BUILD_DATE: buildDate }),
       new webpack.DefinePlugin({
