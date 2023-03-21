@@ -11,13 +11,10 @@ const App = () => (
   <BrowserRouter>
     <Routes>
       <Route element={<Layout />}>
-        <Route index path='/' element={<Navigate to='/test1' />} />
+        <Route path='/' element={<Navigate to='/test1' />} />
         <Route path='/test1/*' element={withSuspense(Test1)} />
         <Route path='/test2/*' element={withSuspense(Test2)} />
-        {/* <Route path='/test2/:id' element={<Test2Card />} /> */}
-        <Route path='/test3' element={withSuspense(Test3)} />
-        {/* <Route path='/test3/create' element={<Test3CreateEvent />} />
-            <Route path='/test3/:id' element={<Test3ModifyEvent />} /> */}
+        <Route path='/test3/*' element={withSuspense(Test3)} />
       </Route>
       <Route path='*' element={<h3>Not Found</h3>} />
     </Routes>
