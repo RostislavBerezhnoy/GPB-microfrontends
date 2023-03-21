@@ -1,6 +1,7 @@
 import { lazy } from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
-import { Layout } from 'components/layout'
+import { Layout } from 'components/Layouts'
+import { NotFound } from 'components/NotFound'
 import { withSuspense } from 'utils/withSuspense'
 
 const Test1 = lazy(() => import('gpb_test1/Test1'))
@@ -16,7 +17,7 @@ const App = () => (
         <Route path='/test2/*' element={withSuspense(Test2)} />
         <Route path='/test3/*' element={withSuspense(Test3)} />
       </Route>
-      <Route path='*' element={<h3>Not Found</h3>} />
+      <Route path='*' element={<NotFound />} />
     </Routes>
   </BrowserRouter>
 )
