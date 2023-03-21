@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import React, { FC } from 'react'
 import { Card } from './Card'
 import { Box } from '../Box'
 import { cardMocks } from './mocks'
