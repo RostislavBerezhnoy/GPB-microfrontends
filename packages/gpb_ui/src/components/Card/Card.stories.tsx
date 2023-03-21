@@ -4,7 +4,7 @@ import { Box } from '../Box'
 import { cardMocks } from './mocks'
 
 export default {
-  title: 'Components/Cards',
+  title: 'Components/Card',
   component: Card,
 }
 
