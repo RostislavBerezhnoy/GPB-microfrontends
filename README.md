@@ -43,6 +43,8 @@ Lerna will start all your projects parallelly and open your browser.
 
 ![App Screenshot](./screenshots/test1.png)
 
+![App Screenshot](./screenshots/test2.png)
+
 ## Tech Stack
 
 React, Typescript, Ant Design, Webpack, Lerna, React Router V6, Redux Toolkit (RTK Query), Formik, Storybook

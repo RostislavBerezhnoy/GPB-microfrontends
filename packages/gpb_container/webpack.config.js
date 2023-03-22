@@ -6,7 +6,7 @@ const deps = require('./package.json').dependencies;
 const { cwd } = require('node:process');
 const { resolve } = require('node:path');
 const TsconfigPathsWebpackPlugin = require('tsconfig-paths-webpack-plugin');
-require('dotenv').config({ path: './.env' });
+require('dotenv').config({ path: './.env' })
 
 const buildDate = new Date().toLocaleString();
 
