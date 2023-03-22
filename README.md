@@ -4,11 +4,11 @@ This project consist of five pieces, a host app `gpb_container`, `gpb_ui` and th
 
 Workflow:
 
-- `gpb_test1` expose Test1 page.
-- `gpb_test2` expose Test2 page.
-- `gpb_test3` expose Test3 page.
-- `gpb_ui` ui-kit for projects.
-- `gpb_container` import Test1, Test2 and Test3 pages.
+- `gpb_test1` expose Test1 app.
+- `gpb_test2` expose Test2 app.
+- `gpb_test3` expose Test3 app.
+- `gpb_ui` ui-kit based on Ant Design.
+- `gpb_container` contains main layout and imports Test1, Test2 and Test3 apps.
 
 ## Running Demo
 
@@ -41,4 +41,4 @@ Lerna will start all your projects parallelly and open your browser.
 
 ## Tech Stack
 
-React, Typescript, Ant Design, Webpack, Lerna, React Router V6, Redux Toolkit, Formik, Storybook
+React, Typescript, Ant Design, Webpack, Lerna, React Router V6, Redux Toolkit (RTK Query), Formik, Storybook
