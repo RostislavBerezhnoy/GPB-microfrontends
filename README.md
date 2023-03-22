@@ -39,6 +39,17 @@ Lerna will start all your projects parallelly and open your browser.
 - http://localhost:3002/ (gpb_test2)
 - http://localhost:3003/ (gpb_test3)
 
+## Screenshots
+
+![App Screenshot](./screenshots/test1.png)
+
 ## Tech Stack
 
 React, Typescript, Ant Design, Webpack, Lerna, React Router V6, Redux Toolkit (RTK Query), Formik, Storybook
+
+## Monolith
+Here you will find the monolith version of [project](https://github.com/RostislavBerezhnoy/GPB-test) and the full [task](https://github.com/GPB-COS/test-work-react).
+
+## Feedback
+
+If you have any feedback, please reach out to me or feel free to open up a issue.
