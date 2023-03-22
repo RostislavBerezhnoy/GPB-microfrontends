@@ -2,7 +2,7 @@ const path = require('path')
 
 module.exports = {
   parser: '@typescript-eslint/parser',
-  ignorePatterns: ['**/node_modules/**', '**/dist/**', '**/public/**'],
+  ignorePatterns: ['**/node_modules/**', '**/dist/**'],
   env: {
     browser: true,
     node: true,

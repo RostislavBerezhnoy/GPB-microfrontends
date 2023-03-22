@@ -1,6 +1,10 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { ModuleFederationPlugin } = require('webpack').container;
 const deps = require('./package.json').dependencies;
+const TsconfigPathsWebpackPlugin = require('tsconfig-paths-webpack-plugin');
+const { cwd } = require('node:process');
+const { resolve } = require('node:path');
+const webpack = require('webpack');
 
 module.exports = {
   entry: './src/index.ts',
@@ -8,12 +12,18 @@ module.exports = {
   devServer: {
     port: 3002,
     open: true,
+    historyApiFallback: true,
     headers: {
       'Access-Control-Allow-Origin': '*',
     },
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
+    plugins: [
+      new TsconfigPathsWebpackPlugin({
+        configFile: resolve(cwd(), './tsconfig.json'),
+      }),
+    ]
   },
   module: {
     rules: [
@@ -25,11 +35,14 @@ module.exports = {
     ],
   },
   plugins: [
+    new webpack.DefinePlugin({
+      'process.env': JSON.stringify(process.env)
+    }),
     new ModuleFederationPlugin({
       name: 'gpb_test2',
       filename: 'remoteEntry.js',
       exposes: {
-        './Test2': './src/views/Test2',
+        './Test2': './src/App',
       },
       shared: {
         ...deps,
