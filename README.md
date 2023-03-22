@@ -4,11 +4,11 @@ This project consist of five pieces, a host app `gpb_container`, `gpb_ui` and th
 
 Workflow:
 
-- `gpb_test1` expose Test1 app.
-- `gpb_test2` expose Test2 app.
-- `gpb_test3` expose Test3 app.
-- `gpb_ui` ui-kit based on Ant Design.
-- `gpb_container` contains main layout and imports Test1, Test2 and Test3 apps.
+- [`gpb_test1`](https://github.com/RostislavBerezhnoy/GPB-with-microfrontends/tree/develop/packages/gpb_test1) expose Test1 app.
+- [`gpb_test2`](https://github.com/RostislavBerezhnoy/GPB-with-microfrontends/tree/develop/packages/gpb_test2) expose Test2 app.
+- [`gpb_test3`](https://github.com/RostislavBerezhnoy/GPB-with-microfrontends/tree/develop/packages/gpb_test3) expose Test3 app.
+- [`gpb_ui`](https://github.com/RostislavBerezhnoy/GPB-with-microfrontends/tree/develop/packages/gpb_ui) ui-kit based on Ant Design.
+- [`gpb_container`](https://github.com/RostislavBerezhnoy/GPB-with-microfrontends/tree/develop/packages/gpb_container) contains main layout and imports Test1, Test2 and Test3 apps.
 
 ## Running Demo
 
