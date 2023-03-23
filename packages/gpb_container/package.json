@@ -46,7 +46,8 @@
     "lint": "tsc --noEmit && eslint --fix \"src/**/*.@(js|jsx|ts|tsx)\"",
     "build": "webpack --mode production",
     "serve": "serve dist -p 3000",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "postinstall": "node -e \"if (process.env.NODE_ENV === 'production'){process.exit(1)} \" || yarn workspace gpb_ui build"
   },
   "dependencies": {
     "dotenv": "^16.0.3",
