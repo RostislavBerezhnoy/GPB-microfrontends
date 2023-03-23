@@ -47,6 +47,13 @@ Lerna will start all your projects parallelly and open your browser.
 
 ![App Screenshot](./screenshots/test3.png)
 
+## Deployment [without backend]
+
+- `gpb_container` has been deployed on https://gpb-test-container.netlify.app/ 
+- `gpb_test1` has been deployed on https://gpb-test1.netlify.app/
+- `gpb_test2` has been deployed on https://gpb-test2.netlify.app/
+- `gpb_test3` has been deployed on https://gpb-test3.netlify.app/
+
 ## Tech Stack
 
 React, Typescript, Ant Design, Webpack, Lerna, React Router V6, Redux Toolkit (RTK Query), Formik, Pusher-JS, Storybook
