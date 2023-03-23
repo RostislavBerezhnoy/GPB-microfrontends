@@ -1,4 +1,4 @@
-import { HeaderProps } from './Header'
+import { HeaderProps } from './types'
 
 export const items: HeaderProps['items'] = ['test1', 'test2', 'test3'].map(key => ({
   key,

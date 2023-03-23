@@ -1,12 +1,14 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 const { ModuleFederationPlugin } = webpack.container;
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
+const TsconfigPathsWebpackPlugin = require('tsconfig-paths-webpack-plugin');
+const dotenv = require('dotenv');
 const deps = require('./package.json').dependencies;
 const { cwd } = require('node:process');
 const { resolve } = require('node:path');
-const TsconfigPathsWebpackPlugin = require('tsconfig-paths-webpack-plugin');
-require('dotenv').config({ path: './.env' })
+
+dotenv.config({ path: './.env' });
 
 const buildDate = new Date().toLocaleString();
 
@@ -69,6 +71,8 @@ module.exports = (_, argv) => {
       }),
       new HtmlWebpackPlugin({
         template: './public/index.html',
+        favicon: './public/favicon.ico',
+        publicPath: '/',
       }),
       new ForkTsCheckerWebpackPlugin()
     ],

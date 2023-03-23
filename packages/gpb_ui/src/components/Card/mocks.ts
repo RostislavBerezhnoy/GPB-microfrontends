@@ -1,4 +1,6 @@
-export const cardMocks = [
+import { CardProps } from './types'
+
+export const cardMocks: CardProps[] = [
   {
     header: 'Заголовок 1',
     options: ['элемент списка 1', 'элемент списка 2', 'элемент списка 3'],

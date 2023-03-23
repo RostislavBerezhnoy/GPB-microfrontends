@@ -1,19 +1,29 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 const { ModuleFederationPlugin } = require('webpack').container;
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const TsconfigPathsWebpackPlugin = require('tsconfig-paths-webpack-plugin');
 const deps = require('./package.json').dependencies;
+const { cwd } = require('node:process');
+const { resolve } = require('node:path');
 
 module.exports = {
   entry: './src/index.ts',
-  mode: 'development',
+  mode: process.env.NODE_ENV || 'development',
   devServer: {
     port: 3003,
     open: true,
+    historyApiFallback: true,
     headers: {
       'Access-Control-Allow-Origin': '*',
     },
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
+    plugins: [
+      new TsconfigPathsWebpackPlugin({
+        configFile: resolve(cwd(), './tsconfig.json'),
+      }),
+    ]
   },
   module: {
     rules: [
@@ -22,14 +32,21 @@ module.exports = {
         loader: 'ts-loader',
         exclude: /node_modules/,
       },
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
     ],
   },
   plugins: [
+    new webpack.DefinePlugin({
+      'process.env': JSON.stringify(process.env)
+    }),
     new ModuleFederationPlugin({
       name: 'gpb_test3',
       filename: 'remoteEntry.js',
       exposes: {
-        './Test3': './src/views/Test3',
+        './Test3': './src/App',
       },
       shared: {
         ...deps,
