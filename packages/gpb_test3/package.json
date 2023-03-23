@@ -45,7 +45,7 @@
     "build": "webpack --mode production",
     "serve": "serve dist -p 3003",
     "clean": "rm -rf dist",
-    "postinstall": "node -e \"if (process.env.NODE_ENV === 'production'){process.exit(1)} \" || yarn workspace gpb_ui build"
+    "postinstall": "yarn workspace gpb_ui build"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
