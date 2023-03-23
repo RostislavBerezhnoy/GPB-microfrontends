@@ -1,4 +1,4 @@
-# Webpack 5 Module Federation GPB Test with React/Typescript [in dev]
+# Webpack 5 Module Federation GPB Test with React/Typescript
 
 This project consist of five pieces, a host app `gpb_container`, `gpb_ui` and three remotes `gpb_test1` `gpb_test2` `gpb_test3`.
 
@@ -57,3 +57,7 @@ Here you will find the monolith version of [project](https://github.com/Rostisla
 ## Feedback
 
 If you have any feedback, please reach out to me or feel free to open up a issue.
+
+## License
+
+MIT
