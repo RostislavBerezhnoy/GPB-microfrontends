@@ -45,9 +45,11 @@ Lerna will start all your projects parallelly and open your browser.
 
 ![App Screenshot](./screenshots/test2.png)
 
+![App Screenshot](./screenshots/test3.png)
+
 ## Tech Stack
 
-React, Typescript, Ant Design, Webpack, Lerna, React Router V6, Redux Toolkit (RTK Query), Formik, Storybook
+React, Typescript, Ant Design, Webpack, Lerna, React Router V6, Redux Toolkit (RTK Query), Formik, Pusher-JS, Storybook
 
 ## Monolith
 Here you will find the monolith version of [project](https://github.com/RostislavBerezhnoy/GPB-test) and the full [task](https://github.com/GPB-COS/test-work-react).

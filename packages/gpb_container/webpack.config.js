@@ -71,7 +71,7 @@ module.exports = (_, argv) => {
       }),
       new HtmlWebpackPlugin({
         template: './public/index.html',
-        favicon: './public/favicon.png',
+        favicon: './public/favicon.ico',
         publicPath: '/',
       }),
       new ForkTsCheckerWebpackPlugin()

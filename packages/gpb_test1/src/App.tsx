@@ -1,5 +1,5 @@
-import Test1 from './views/Test1'
+import { Test1Page } from './views/Test1Page'
 
-const App = () => <Test1 />
+const App = () => <Test1Page />
 
 export default App

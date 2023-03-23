@@ -13,7 +13,7 @@ import {
 
 const { Title } = Typography
 
-export const Test2Card = () => {
+export const CardPage = () => {
   const { id = '' } = useParams()
   const navigate = useNavigate()
   const { useGetServiceByIdQuery } = ServiceQueries

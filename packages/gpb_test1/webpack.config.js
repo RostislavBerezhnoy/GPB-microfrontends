@@ -42,7 +42,7 @@ module.exports = {
       name: 'gpb_test1',
       filename: 'remoteEntry.js',
       exposes: {
-        './Test1': './src/views/Test1',
+        './Test1': './src/App',
       },
       shared: {
         ...deps,
