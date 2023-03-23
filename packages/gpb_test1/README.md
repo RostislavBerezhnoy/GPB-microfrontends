@@ -6,6 +6,10 @@ Here you will find the [task](https://github.com/GPB-COS/test-work-react/tree/ma
 
 ![App Screenshot](./app.png)
 
+## Deployment
+
+`gpb_test1` has been deployed on https://gpb-test1.netlify.app/
+
 ## Tech Stack
 
 React, Typescript, Ant Design

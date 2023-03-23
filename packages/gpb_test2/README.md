@@ -20,6 +20,10 @@ node server.js
 
 ![App Screenshot](./app.png)
 
+## Deployment [without backend]
+
+`gpb_test2` has been deployed on https://gpb-test2.netlify.app/
+
 ## Tech Stack
 
 React, Typescript, Ant Design, Redux Toolkit (RTK Query)

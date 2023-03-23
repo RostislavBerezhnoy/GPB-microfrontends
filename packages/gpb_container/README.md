@@ -7,6 +7,10 @@
 
 ![App Screenshot](../../screenshots/test3.png)
 
+## Deployment
+
+`gpb_container` has been deployed on https://gpb-test-container.netlify.app/ 
+
 ## Tech Stack
 
 React, React Router V6, Typescript
