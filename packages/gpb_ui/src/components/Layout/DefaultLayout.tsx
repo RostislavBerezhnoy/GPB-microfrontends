@@ -1,11 +1,8 @@
-import { FC, PropsWithChildren, ReactNode } from 'react'
+import { FC, PropsWithChildren } from 'react'
 import { Layout } from 'antd'
+import { DefaultLayoutProps } from './types'
 
 const { Header, Content } = Layout
-
-export type DefaultLayoutProps = {
-  header?: ReactNode
-}
 
 export const DefaultLayout: FC<PropsWithChildren<DefaultLayoutProps>> = ({ header, children }) => (
   <Layout>

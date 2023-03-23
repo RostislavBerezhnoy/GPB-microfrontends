@@ -1,12 +1,6 @@
 import { FC } from 'react'
 import { Menu } from 'antd'
-import type { MenuProps } from 'antd'
-
-export type HeaderProps = {
-  items: MenuProps['items']
-  pathname: string
-  onNavigate: (path: string) => void
-}
+import { HeaderProps } from './types'
 
 export const Header: FC<HeaderProps> = ({ items, pathname, onNavigate }) => (
   <Menu

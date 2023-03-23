@@ -1,11 +1,6 @@
 import { FC } from 'react'
 import { List, Typography } from 'antd'
-
-export type CardProps = {
-  header: string
-  options: string[]
-  text: string
-}
+import { CardProps } from './types'
 
 const { Title, Text } = Typography
 

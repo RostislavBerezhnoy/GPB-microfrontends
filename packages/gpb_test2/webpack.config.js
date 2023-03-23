@@ -1,14 +1,14 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 const { ModuleFederationPlugin } = require('webpack').container;
-const deps = require('./package.json').dependencies;
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TsconfigPathsWebpackPlugin = require('tsconfig-paths-webpack-plugin');
+const deps = require('./package.json').dependencies;
 const { cwd } = require('node:process');
 const { resolve } = require('node:path');
-const webpack = require('webpack');
 
 module.exports = {
   entry: './src/index.ts',
-  mode: 'development',
+  mode: process.env.NODE_ENV || 'development',
   devServer: {
     port: 3002,
     open: true,

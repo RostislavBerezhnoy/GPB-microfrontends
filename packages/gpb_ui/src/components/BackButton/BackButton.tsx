@@ -1,11 +1,7 @@
-import { FC, CSSProperties } from 'react'
+import { FC } from 'react'
 import { Button } from 'antd'
 import { Box } from '../Box'
-
-export type BackButtonProps = CSSProperties & {
-  text?: string
-  onNavigate: () => void
-}
+import { BackButtonProps } from './types'
 
 export const BackButton: FC<BackButtonProps> = ({ text = 'Назад', onNavigate, ...rest }) => (
   <Box {...rest}>
