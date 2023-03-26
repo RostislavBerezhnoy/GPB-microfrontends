@@ -2,7 +2,7 @@ import { lazy } from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { Layout } from 'components/Layouts'
 import { NotFound } from 'components/NotFound'
-import { withSuspense } from 'utils/withSuspense'
+import { withSuspense } from 'hocs/withSuspense'
 
 const Test1 = lazy(() => import('gpb_test1/Test1'))
 const Test2 = lazy(() => import('gpb_test2/Test2'))
