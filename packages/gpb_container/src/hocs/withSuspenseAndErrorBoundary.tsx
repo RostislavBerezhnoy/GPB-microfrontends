@@ -2,7 +2,7 @@ import { LazyExoticComponent, ComponentType, Suspense } from 'react'
 import { ErrorBoundary } from 'react-error-boundary'
 import { WrappedBox, Loader } from 'gpb_ui'
 
-export const withSuspense = (Component: LazyExoticComponent<ComponentType>) => (
+export const withSuspenseAndErrorBoundary = (Component: LazyExoticComponent<ComponentType>) => (
   <Suspense
     fallback={
       <WrappedBox>
