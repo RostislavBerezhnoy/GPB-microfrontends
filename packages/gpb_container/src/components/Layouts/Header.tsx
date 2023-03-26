@@ -11,5 +11,5 @@ export const Header: FC = () => {
   const navigate = useNavigate()
   const { pathname } = useLocation()
 
-  return <DefaultHeader items={items} pathname={pathname} onNavigate={path => navigate(path)} />
+  return <DefaultHeader items={items} pathname={pathname.replace('/', '')} onNavigate={path => navigate(path)} />
 }

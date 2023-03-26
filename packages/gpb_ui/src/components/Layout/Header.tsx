@@ -6,7 +6,7 @@ export const Header: FC<HeaderProps> = ({ items, pathname, onNavigate }) => (
   <Menu
     theme='dark'
     mode='horizontal'
-    selectedKeys={[pathname.replace('/', '')]}
+    selectedKeys={[pathname]}
     items={items}
     onClick={({ key }) => onNavigate(key)}
   />
