@@ -39,10 +39,9 @@
   "scripts": {
     "start": "webpack serve",
     "lint": "tsc --noEmit && eslint --fix \"src/**/*.@(js|jsx|ts|tsx)\"",
-    "build": "webpack --mode production",
+    "build": "yarn workspace gpb_ui build && webpack --mode production",
     "serve": "serve dist -p 3001",
-    "clean": "rm -rf dist",
-    "postinstall": "yarn workspace gpb_ui build"
+    "clean": "rm -rf dist"
   },
   "dependencies": {
     "antd": "^5.3.2",
