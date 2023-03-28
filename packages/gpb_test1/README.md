@@ -13,3 +13,7 @@ Here you will find the [task](https://github.com/GPB-COS/test-work-react/tree/ma
 ## Tech Stack
 
 React, Typescript, Ant Design
+
+## License
+
+[MIT](https://github.com/RostislavBerezhnoy/gpb-with-microfrontends/blob/develop/LICENSE)

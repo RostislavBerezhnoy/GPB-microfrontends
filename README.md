@@ -67,4 +67,4 @@ If you have any feedback, please reach out to me or feel free to open up a issue
 
 ## License
 
-[MIT](/.LICENSE)
+[MIT](/LICENSE)

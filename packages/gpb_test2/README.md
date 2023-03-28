@@ -27,3 +27,7 @@ node server.js
 ## Tech Stack
 
 React, Typescript, Ant Design, Redux Toolkit (RTK Query)
+
+## License
+
+[MIT](https://github.com/RostislavBerezhnoy/gpb-with-microfrontends/blob/develop/LICENSE)

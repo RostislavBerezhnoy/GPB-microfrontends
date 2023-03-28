@@ -14,3 +14,7 @@
 ## Tech Stack
 
 React, React Router V6, Typescript
+
+## License
+
+[MIT](https://github.com/RostislavBerezhnoy/gpb-with-microfrontends/blob/develop/LICENSE)
